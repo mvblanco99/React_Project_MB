@@ -1,0 +1,32 @@
+/*Moviles en vertical
+=============================================================*/
+@media screen and (min-width:500px){
+    
+    .header-principal{
+        padding: 0 25px;
+    }
+
+    .header-principal a{
+        font-size: 1.8em;
+        padding: 0;
+        text-align: start;
+    }
+
+    .main .principal{
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .main .principal p{
+        padding: 10px 0;
+    }
+
+    .main .correo{
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .footer{
+        display: none;
+    }
+}

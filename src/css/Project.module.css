@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorFondoAmarillo: #EFFF00;
+    --colorFondoGris: #939393;
+    --colorFondoBlanco: #ffffff;
+    --colorFondoNegro: #000000;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Dispositivos Moviles */
+
+/* Header */
+
+.header-principal{
+    position: fixed;
+    background: var(--colorFondoBlanco);
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 15px; 
+    border-bottom: 1px solid #000;
+    z-index: 1000;
+}
+
+.header-principal a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 50px;
+}
+
+.link_portfolio{
+    display: none;
+}
+
+.container-name{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 50px;
+    background: var(--colorFondoBlanco);
+}
+
+/* Main */
+
+.main{
+    margin-top: 90px;
+}
+
+.container-name h2{
+    font-size: 1em;
+    padding: 10px 5px 10px 10px;
+}
+
+.technologies{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.technologies ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.technologies ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    font-size: .6em;
+    padding: 2px 5px;
+    margin: 2px 2px;
+}
+
+.description-project, .development-description, .images-project,.cover-img ,.about, .unsuccessful{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.description-project p, .development-description p, .about p{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-align: justify;
+    font-size: .9em;
+}
+
+.development-description p{
+    font-size: 1em;
+}
+
+.images-project, .cover-img, .unsuccessful{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cover-img{
+    border: none;
+}
+
+.container-img{
+    width: 90%;
+    padding: 15px;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.about p{
+    font-size: .9em;
+    padding: 10px 25px;
+}
+
+/* Footer */
+
+.footer{
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer p{
+    font-weight: 400;
+    font-size: .7em;
+    padding: 10px 0;
+}
+
+
+
+

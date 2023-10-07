@@ -1,0 +1,169 @@
+@media screen and (min-width:540px) {
+    
+    .header-principal .link_portfolio{
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .technologies{
+        width: 30%;
+        border-right: 1px solid black;
+    }
+
+    .main .description-project{
+        width: 70%;
+    }
+
+    .main .development-description{
+        width: 50%;
+        border-right: 1px solid black;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .cover-img{
+        width: 50%;
+        border-bottom: 1px solid black;
+    }
+
+    .main .cover-img img{
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    .images-project .container-img{
+        width: 90%;
+    }
+
+    .footer p{
+        font-weight: 400;
+        font-size: .7em;
+        padding: 15px 0;
+    }
+
+}
+
+@media screen and (min-width:640px) {
+
+    .technologies ul li{
+        font-size: .7em; 
+        padding: 4px 5px;
+        margin: 5px 5px;
+    }
+
+    .main .description-project p{
+        font-size: 1.1em;
+    }
+
+    .main .development-description{
+        font-size: 1.2em;
+    }
+
+    .main .about{
+        font-size: 1.1em;
+    }
+
+    .main .container-section .images-project .container-img{
+        width: 50%;
+    }
+
+    .unsuccessful .container-img{
+        width: 70%;
+    }
+
+    .footer p{
+        font-weight: 400;
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .header-principal .link_portfolio{
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .technologies ul li{
+        font-size: .9em; 
+        padding: 4px 5px;
+        margin: 5px 5px;
+    }
+
+    .main .description-project p{
+        font-size: 1.1em;
+    }
+
+    .main .development-description{
+        font-size: 1.4em;
+    }
+
+    .main .about{
+        font-size: 1.2em;
+    }
+
+    .main .container-section .images-project .container-img{
+        width: 33.3%;
+    }
+
+    .unsuccessful .container-img{
+        width: 45%;
+    }
+
+    .footer p{
+        font-weight: 400;
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (min-width:1260px) {
+
+    .header-principal .link_portfolio{
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .technologies ul li{
+        font-size: .9em; 
+        padding: 4px 5px;
+        margin: 5px 5px;
+    }
+
+    .main .description-project p{
+        font-size: 1.2em;
+    }
+
+    .main .development-description{
+        font-size: 1.5em;
+    }
+
+    .main .about{
+        font-size: 1.4em;
+    }
+
+    .unsuccessful .container-img{
+        width: 40%;
+    }
+
+    .footer p{
+        font-weight: 400;
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+}
+

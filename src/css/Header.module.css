@@ -1,0 +1,27 @@
+.header_principal{
+    position: fixed;
+    background: var(--colorFondoAmarillo);
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 15px; 
+    z-index: 1000;
+}
+
+.header_principal a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 20px;
+    background: #d2d2d2;
+    margin-top: 5px;
+}
+
+.link_portfolio{
+    display: none;
+}
