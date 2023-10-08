@@ -18,7 +18,7 @@ const Project = () => {
     <>
         <div className={stylesProject.container}>
             
-            <Header background={backgroundHeader}/>
+            <Header background={backgroundHeader} name_route='CLOSE' route={'/Portfolio'}/>
 
             <section className={stylesProject.container_name}>
                 <h2 className={stylesProject.name_project}>PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>

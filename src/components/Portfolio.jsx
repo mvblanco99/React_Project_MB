@@ -28,7 +28,7 @@ const Portfolio = () => {
     <>
         <div className={stylesPortfolio.container}>
             
-            <Header background={backgroundHeader} display={displayLinkPortfolio}/>
+            <Header background={backgroundHeader} display={displayLinkPortfolio} name_route='CLOSE' route={'/'}/>
 
             <main className={stylesPortfolio.main}>
 

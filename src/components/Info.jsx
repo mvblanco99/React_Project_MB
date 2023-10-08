@@ -22,7 +22,7 @@ const Info = () => {
     <>
         <div style={backgroundContainer}>
 
-            <Header background={backgroundHeader}/>
+            <Header background={backgroundHeader} name_route='CLOSE' route={'/'}/>
 
             <main className={stylesInfo.main}>
 

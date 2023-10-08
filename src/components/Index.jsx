@@ -23,7 +23,7 @@ const Index = () => {
     <>
       <div className="container" style={backgroundContainer}>
         
-        <Header background={backgroundContainer}/>
+        <Header background={backgroundContainer} name_route='INFO' route='./Info'/>
   
         <main style={mainStyles}>
             <p style={paragraphStyles}>Manuel Blanco</p>
