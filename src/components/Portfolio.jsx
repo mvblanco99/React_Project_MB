@@ -12,7 +12,12 @@ const Portfolio = () => {
     }
 
     const colorDecoracion = {
-        backgroundColor : '#FFFFFF'
+        backgroundColor : '#FFFFFF',
+    }
+
+    const backgroundHeader = {
+        backgroundColor : '#FFFFFF',
+        borderBottom: '1px solid black'
     }
 
     const displayLinkPortfolio = {
@@ -23,7 +28,7 @@ const Portfolio = () => {
     <>
         <div className={stylesPortfolio.container}>
             
-            <Header background={colorDecoracion} display={displayLinkPortfolio}/>
+            <Header background={backgroundHeader} display={displayLinkPortfolio}/>
 
             <main className={stylesPortfolio.main}>
 

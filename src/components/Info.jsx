@@ -13,11 +13,16 @@ const Info = () => {
         background : 'var(--colorFondoBlanco)',
     }
 
+    const backgroundHeader = {
+        background : 'var(--colorFondoBlanco)',
+        borderBottom: '1px solid black'
+    }
+
     return (
     <>
         <div style={backgroundContainer}>
 
-            <Header background={backgroundContainer}/>
+            <Header background={backgroundHeader}/>
 
             <main className={stylesInfo.main}>
 

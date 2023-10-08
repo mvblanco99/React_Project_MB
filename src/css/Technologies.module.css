@@ -23,14 +23,13 @@
 }
 
 @media screen and (min-width:540px) {
-    .main .technologies{
+    .technologies{
         width: 30%;
         border-right: 1px solid black;
     }
 }
 
 @media screen and (min-width:640px) {
-
     .technologies ul li{
         font-size: .7em; 
         padding: 4px 5px;
@@ -39,8 +38,6 @@
 }
 
 @media screen and (min-width:1024px) {
-
-    
     .technologies ul li{
         font-size: .9em; 
         padding: 4px 5px;

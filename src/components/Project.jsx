@@ -9,15 +9,16 @@ import imagen2 from '../assets/images/proyecto2.jpg'
 
 const Project = () => {
   
-    const backgroundContainer = {
+    const backgroundHeader = {
         background : 'var(--colorFondoBlanco)',
+        borderBottom: '1px solid black'
     }
   
     return (
     <>
         <div className={stylesProject.container}>
             
-            <Header background={backgroundContainer}/>
+            <Header background={backgroundHeader}/>
 
             <section className={stylesProject.container_name}>
                 <h2 className={stylesProject.name_project}>PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>
