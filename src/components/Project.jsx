@@ -4,6 +4,8 @@ import FooterProjectScreen from './FooterProjectScreen'
 import Technologies from './Technologies'
 import stylesProject from '../css/Project.module.css'
 import '../css/General.css'
+import imagen from '../assets/images/proyecto1.webp'
+import imagen2 from '../assets/images/proyecto2.jpg'
 
 const Project = () => {
   
@@ -45,7 +47,7 @@ const Project = () => {
                     <section className={stylesProject.cover_img}>
                         
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                     </section>
@@ -53,35 +55,35 @@ const Project = () => {
                     <section className={stylesProject.images_project}>
                         
                         <div className={stylesProject.container_img}>
-                            <img src="../assets/images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                         <div className={stylesProject.container_img}>
-                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                            <img src={imagen} alt="proyecto1"/>
                         </div>
 
                     </section>
@@ -93,8 +95,8 @@ const Project = () => {
                     </section>
 
                     <section className={stylesProject.unsuccessful}>
-                        <div className="container-img">
-                            <img src="images/proyecto2.jpg" alt="proyecto2"/>
+                        <div className={stylesProject.container_img}>
+                            <img src={imagen2} alt="proyecto2"/>
                         </div>
                     </section>
                 </div>
