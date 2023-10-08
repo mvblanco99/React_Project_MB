@@ -1,0 +1,33 @@
+.footer{
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer p{
+    font-weight: 400;
+    font-size: .7em;
+    padding: 10px 0;
+}
+
+@media screen and (min-width:540px) {
+    .footer p{
+        font-weight: 400;
+        font-size: .7em;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width:640px) {
+
+    .footer p{
+        font-weight: 400;
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+}

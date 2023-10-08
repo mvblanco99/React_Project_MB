@@ -2,99 +2,108 @@ import React from 'react'
 import Header from './Header'
 import FooterProjectScreen from './FooterProjectScreen'
 import Technologies from './Technologies'
-
+import stylesProject from '../css/Project.module.css'
+import '../css/General.css'
 
 const Project = () => {
-  return (
+  
+    const backgroundContainer = {
+        background : 'var(--colorFondoBlanco)',
+    }
+  
+    return (
     <>
-        <Header/>
+        <div className={stylesProject.container}>
+            
+            <Header background={backgroundContainer}/>
 
-        <section className="container-name">
-            <h2 className="name-project">PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>
-        </section>
-
-        <main className="main">
-                
-            <Technologies/>
-
-            <section className="description-project">
-                <p>
-                    Infrapedia is an open source project available on Github, with the most complete, 
-                    versalite-interactive infrastructure map of the internet. It allows engineers, carriers, 
-                    data center operators, business development executive and other stakeholders to navigate 
-                    the Internet's collection of networks and data centers.
-                </p>
+            <section className={stylesProject.container_name}>
+                <h2 className={stylesProject.name_project}>PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>
             </section>
 
-            <div className="container-section">
-
-                <section className="development-description">
-                    <p>/* Designed and develop mobile oriented desings
-                        for a more concise and easy-to-use UI, allowing
-                        the user to have a better experience */</p>
-                </section>
-
-                <section className="cover-img">
+            <main className={stylesProject.main}>
                     
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                <Technologies/>
 
+                <section className={stylesProject.description_project}>
+                    <p>
+                        Infrapedia is an open source project available on Github, with the most complete, 
+                        versalite-interactive infrastructure map of the internet. It allows engineers, carriers, 
+                        data center operators, business development executive and other stakeholders to navigate 
+                        the Internet's collection of networks and data centers.
+                    </p>
                 </section>
 
-                <section className="images-project">
-                    
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                <div className={stylesProject.container_section}>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                    <section className={stylesProject.development_description}>
+                        <p>/* Designed and develop mobile oriented desings
+                            for a more concise and easy-to-use UI, allowing
+                            the user to have a better experience */</p>
+                    </section>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                    <section className={stylesProject.cover_img}>
+                        
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                    </section>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                    <section className={stylesProject.images_project}>
+                        
+                        <div className={stylesProject.container_img}>
+                            <img src="../assets/images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                    <div className="container-img">
-                        <img src="images/proyecto1.webp" alt="proyecto1"/>
-                    </div>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                </section>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                <section className="about">
-                    <p>&lt;This included thinking more about atomic desings,
-                        allowing to reuse components across the entire UI,
-                        reducing considerably build time and also final bundle
-                        size&gt;</p>
-                </section>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-                <section className="unsuccessful">
-                    <div className="container-img">
-                        <img src="images/proyecto2.jpg" alt="proyecto2"/>
-                    </div>
-                </section>
-            </div>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-        </main>
+                        <div className={stylesProject.container_img}>
+                            <img src="images/proyecto1.webp" alt="proyecto1"/>
+                        </div>
 
-        <FooterProjectScreen/>
+                    </section>
+                    <section className={stylesProject.about}>
+                        <p>&lt;This included thinking more about atomic desings,
+                            allowing to reuse components across the entire UI,
+                            reducing considerably build time and also final bundle
+                            size&gt;</p>
+                    </section>
+
+                    <section className={stylesProject.unsuccessful}>
+                        <div className="container-img">
+                            <img src="images/proyecto2.jpg" alt="proyecto2"/>
+                        </div>
+                    </section>
+                </div>
+
+            </main>
+
+            <FooterProjectScreen/>
+        </div>
+        
     </>
   )
 }

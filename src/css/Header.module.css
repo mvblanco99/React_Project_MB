@@ -1,6 +1,7 @@
+/* Dispositivos móviles pequeños, como smartphones antiguos. */
+
 .header_principal{
     position: fixed;
-    background: var(--colorFondoAmarillo);
     top: 0;
     width: 100%;
     height: 50px;
@@ -16,7 +17,7 @@
     color: #000;
     font-weight: 700;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
     background: #d2d2d2;
     margin-top: 5px;
@@ -25,3 +26,35 @@
 .link_portfolio{
     display: none;
 }
+
+/* Dispositivos móviles más grandes, como smartphones modernos y tablets pequeñas. */
+/* @media screen and (min-width:480px){
+    
+} */
+
+/* Para tablets más grandes y pantallas pequeñas de escritorio. */
+@media screen and (min-width:768px){
+    .link_portfolio{
+        display: block;
+    }
+
+    .header_principal{
+        border-bottom: 1px solid black;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+/*  Para pantallas de escritorio medianas. */
+/* @media screen and (min-width:1024px){
+      
+} */
+
+/* Para pantallas de escritorio grandes. */
+/* @media screen and (min-width:1200px){
+    
+} */
