@@ -1,11 +1,14 @@
-
 import Header from './Header'
 import GeneralFooter from './GeneralFooter'
 import stylesPortfolio from '../css/Portfolio.module.css'
 import "../css/General.css"
 import { Link } from 'react-router-dom'
+import { RoutesContext } from '../context/RoutesContext'
+import { useContext } from 'react'
 
 const Portfolio = () => {
+
+    const {routes, nameRoutes} = useContext(RoutesContext)
 
     const backgroundFooter = {
         background : 'transparent'
@@ -28,7 +31,7 @@ const Portfolio = () => {
     <>
         <div className={stylesPortfolio.container}>
             
-            <Header background={backgroundHeader} display={displayLinkPortfolio} name_route='CLOSE' route={'/'}/>
+            <Header background={backgroundHeader} display={displayLinkPortfolio} name_route={nameRoutes.close} route={routes.home}/>
 
             <main className={stylesPortfolio.main}>
 

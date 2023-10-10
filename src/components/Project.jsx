@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from './Header'
 import FooterProjectScreen from './FooterProjectScreen'
 import Technologies from './Technologies'
@@ -6,9 +6,12 @@ import stylesProject from '../css/Project.module.css'
 import '../css/General.css'
 import imagen from '../assets/images/proyecto1.webp'
 import imagen2 from '../assets/images/proyecto2.jpg'
+import { RoutesContext } from '../context/RoutesContext'
 
 const Project = () => {
-  
+    
+    const {routes, nameRoutes} = useContext(RoutesContext)
+
     const backgroundHeader = {
         background : 'var(--colorFondoBlanco)',
         borderBottom: '1px solid black'
@@ -18,7 +21,7 @@ const Project = () => {
     <>
         <div className={stylesProject.container}>
             
-            <Header background={backgroundHeader} name_route='CLOSE' route={'/Portfolio'}/>
+            <Header background={backgroundHeader} name_route={nameRoutes.close} route={routes.portfolio}/>
 
             <section className={stylesProject.container_name}>
                 <h2 className={stylesProject.name_project}>PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>
