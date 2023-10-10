@@ -1,35 +1,40 @@
-import React from 'react';
+
 import Header from './Header';
 import GeneralFooter from './GeneralFooter'
 import '../css/General.css';
+import "../css/Index.css"
 
 const Index = () => {
 
-  const mainStyles = {
-    width: '90%',
-    margin: '0 auto',
-    marginTop: '50px',
-  }
   
-  const paragraphStyles = {
-    color: 'var(--colorFondoAmarillo)'
-  };
+  const shadowValues = [];
+
   
-  const backgroundContainer = {
-    background : 'var(--colorFondoAmarillo)',
+
+  for (let i = 1; i <= 20; i++) {
+    const offsetX = `0`;
+    const offsetY = `${i*i*2}px`;
+    const color = '#000000';
+
+    shadowValues.push({ offsetX, offsetY, blur, color });
   }
+
+  
+    
+  
+  
 
   return (
     <>
-      <div className="container" style={backgroundContainer}>
+      <div className= "container index-container" >
         
-        <Header background={backgroundContainer} name_route='INFO' route='./Info'/>
+        <Header  name_route='INFO' route='./Info'/>
   
-        <main style={mainStyles}>
-            <p style={paragraphStyles}>Manuel Blanco</p>
+        <main className = "Index-main" >
+            <p className='Index-p' >Manuel Blanco</p>
         </main>
 
-        <GeneralFooter background={backgroundContainer}/>
+        <GeneralFooter />
 
       </div>
     </>

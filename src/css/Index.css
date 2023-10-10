@@ -1,0 +1,32 @@
+.index-container{
+    background-color: var(--colorFondoAmarillo);
+}
+.Index-p{
+    color: black;
+    font-size: 50px;
+}
+.Index-main{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 90%;
+}
+
+@keyframes text-shadow-animation {
+    0% {
+      text-shadow: 0px 0px 0px #000000;
+    }
+    100% {
+      text-shadow: 0px 10px  #000000,
+                   0px 20px  #000000,
+                   0px 30px  #000000
+                  
+                   
+    }
+  }
+  
+  .Index-main {
+    animation: text-shadow-animation 2s ease-in-out forwards;
+  }

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Header from './Header'
 import GeneralFooter from './GeneralFooter'
 import stylesPortfolio from '../css/Portfolio.module.css'
