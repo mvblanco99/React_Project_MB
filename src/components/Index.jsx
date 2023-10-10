@@ -16,7 +16,7 @@ const Index = () => {
     const offsetY = `${i*i*2}px`;
     const color = '#000000';
 
-    shadowValues.push({ offsetX, offsetY, blur, color });
+    shadowValues.push({ offsetX, offsetY, color });
   }
 
   
