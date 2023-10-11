@@ -2,15 +2,17 @@ import React, { useContext } from 'react'
 import Header from './Header'
 import FooterProjectScreen from './FooterProjectScreen'
 import Technologies from './Technologies'
+import { RoutesContext } from '../context/RoutesContext'
+import { direccionamiento } from '../helpers/direccionamiento_rutas'
 import stylesProject from '../css/Project.module.css'
 import '../css/General.css'
 import imagen from '../assets/images/proyecto1.webp'
 import imagen2 from '../assets/images/proyecto2.jpg'
-import { RoutesContext } from '../context/RoutesContext'
 
 const Project = () => {
     
     const {routes, nameRoutes} = useContext(RoutesContext)
+    const { route, name_route } = direccionamiento('project', routes, nameRoutes);
 
     const backgroundHeader = {
         background : 'var(--colorFondoBlanco)',
@@ -21,7 +23,11 @@ const Project = () => {
     <>
         <div className={stylesProject.container}>
             
-            <Header background={backgroundHeader} name_route={nameRoutes.close} route={routes.portfolio}/>
+            <Header 
+                backgroundHeader={backgroundHeader} 
+                name_route={name_route} 
+                route={route}
+            />
 
             <section className={stylesProject.container_name}>
                 <h2 className={stylesProject.name_project}>PROJECTS  <i className="fa-solid fa-arrow-right"></i>  AGRIMANAGER</h2>

@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import Header from './Header'
 import GeneralFooter from './GeneralFooter'
+import { RoutesContext } from '../context/RoutesContext'
+import { direccionamiento } from '../helpers/direccionamiento_rutas'
 import stylesInfo from '../css/Info.module.css'
 import "../css/General.css"
-import { RoutesContext } from '../context/RoutesContext'
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 // import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +13,7 @@ import { RoutesContext } from '../context/RoutesContext'
 const Info = () => {
 
     const {routes, nameRoutes} = useContext(RoutesContext)
+    const { route, name_route } = direccionamiento('info', routes, nameRoutes);
   
     const backgroundContainer = {
         background : 'var(--colorFondoBlanco)',
@@ -25,7 +28,11 @@ const Info = () => {
     <>
         <div style={backgroundContainer}>
 
-            <Header background={backgroundHeader} name_route={nameRoutes.close} route={routes.home}/>
+            <Header 
+                backgroundHeader={backgroundHeader} 
+                name_route={name_route} 
+                route={route}
+            />
 
             <main className={stylesInfo.main}>
 

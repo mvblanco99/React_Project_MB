@@ -1,13 +1,15 @@
+import { useContext } from 'react';
 import Header from './Header';
 import GeneralFooter from './GeneralFooter'
 import { RoutesContext } from '../context/RoutesContext';
+import { direccionamiento } from '../helpers/direccionamiento_rutas';
 import '../css/General.css';
 import "../css/Index.css"
-import { useContext } from 'react';
 
 const Index = () => {
 
   const {routes, nameRoutes} = useContext(RoutesContext)
+  const { route, name_route } = direccionamiento('index', routes, nameRoutes);
 
   const shadowValues = [];
 
@@ -23,7 +25,7 @@ const Index = () => {
     <>
       <div className= "container index-container" >
       
-        <Header  name_route={nameRoutes.info} route={routes.info}/>
+        <Header name_route={name_route} route={route}/>
         
         <main className = "Index-main" >
             <p className='Index-p'>Manuel Blanco</p>
