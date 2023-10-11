@@ -4,7 +4,7 @@ import GeneralFooter from './GeneralFooter'
 import { RoutesContext } from '../context/RoutesContext'
 import { direccionamiento } from '../helpers/direccionamiento_rutas'
 import stylesInfo from '../css/Info.module.css'
-import "../css/General.css"
+
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -68,7 +68,7 @@ const Info = () => {
 
             </main>
 
-            <GeneralFooter background={backgroundContainer}/>
+            <GeneralFooter backgroundFooter={backgroundContainer}/>
         </div>
     </>
   )

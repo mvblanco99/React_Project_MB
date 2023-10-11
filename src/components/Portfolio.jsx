@@ -5,8 +5,6 @@ import GeneralFooter from './GeneralFooter'
 import { RoutesContext } from '../context/RoutesContext'
 import { direccionamiento } from '../helpers/direccionamiento_rutas'
 import stylesPortfolio from '../css/Portfolio.module.css'
-import "../css/General.css"
-
 
 const Portfolio = () => {
 
@@ -126,7 +124,7 @@ const Portfolio = () => {
 
             </main>
 
-            <GeneralFooter background={backgroundFooter} colorDecoracion={colorDecoracion}/>
+            <GeneralFooter backgroundFooter={backgroundFooter} colorDecoracion={colorDecoracion}/>
 
         </div>
         

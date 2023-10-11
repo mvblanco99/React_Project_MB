@@ -3,7 +3,6 @@ import Header from './Header';
 import GeneralFooter from './GeneralFooter'
 import { RoutesContext } from '../context/RoutesContext';
 import { direccionamiento } from '../helpers/direccionamiento_rutas';
-import '../css/General.css';
 import "../css/Index.css"
 
 const Index = () => {

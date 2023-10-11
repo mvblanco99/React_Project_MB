@@ -5,7 +5,6 @@ import Technologies from './Technologies'
 import { RoutesContext } from '../context/RoutesContext'
 import { direccionamiento } from '../helpers/direccionamiento_rutas'
 import stylesProject from '../css/Project.module.css'
-import '../css/General.css'
 import imagen from '../assets/images/proyecto1.webp'
 import imagen2 from '../assets/images/proyecto2.jpg'
 

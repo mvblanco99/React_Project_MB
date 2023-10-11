@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { BrowserRouter} from 'react-router-dom'
 import RoutesProvider from './context/RoutesProvider'
+import './css/General.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
